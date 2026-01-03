@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TaskDetails } from './task-details';
+import { LeftSidebar } from './left-sidebar';
 
-describe('TaskDetails', () => {
-  let component: TaskDetails;
-  let fixture: ComponentFixture<TaskDetails>;
+describe('LeftSidebar', () => {
+  let component: LeftSidebar;
+  let fixture: ComponentFixture<LeftSidebar>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TaskDetails]
+      imports: [LeftSidebar]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TaskDetails);
+    fixture = TestBed.createComponent(LeftSidebar);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
