@@ -1,0 +1,13 @@
+<div>
+    <nav>
+        <a routerLink="/todolist/all">All</a>
+        <a routerLink="/todolist/completed">completed</a>
+        <a routerlink="/todolist/pending">pending</a>
+    </nav>
+   <div *ngFor="let task of getTasks_task();let i = index">
+        <h2>{{task.task_name}}</h2>
+        <h3>{{task.task_status}}</h3>
+        <button (click)="deleteTask(task.task_name)">delete</button>
+        <button (click)="Completed_task(task.task_name)">toggle Task</button>
+   </div>
+</div>

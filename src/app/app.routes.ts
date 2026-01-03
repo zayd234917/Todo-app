@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
-import { CreateTask } from './components/create-task/create-task';
+import { Todo } from './components/todo/todo';
+import { Todolist } from './components/todolist/todolist';
 
 export const routes: Routes = [
- {path:'',component:CreateTask}
+    {path:'',component:Todo},
+    {path:'list',component:Todolist}
 ];
