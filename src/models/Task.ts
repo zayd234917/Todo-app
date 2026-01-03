@@ -6,6 +6,11 @@ export class Task{
     public get task_n() : string {
         return this.task_name
     }
+    
+    public set task_n(v : string) {
+        this.task_n = v;
+    }
+    
     public get task_d() : string{
         return this.task_description;
     }
