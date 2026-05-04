@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "taiwindcss"; 
+@import "tailwindcss";
 *{
     overflow: hidden;
     margin: 0;
