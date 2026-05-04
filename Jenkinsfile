@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:18'
+            image 'node:18-alpine'
             args '-p 3000:3000' // Map ports if needed for live reload or testing
         }
     }
@@ -31,8 +31,8 @@ pipeline {
         stage('Build Angular App') {
             steps {
                 // Build for production
-                sh 'npm install '
-                sh 'ng build --configuration=production'
+                sh 'npx ng build --configuration=production'
+
             }
         }
     }
